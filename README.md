@@ -1,5 +1,15 @@
+### Reproduction:
 
-Error:
+two modules,
+- :okta requires "@okta/okta-signin-widget",
+- :react requires "react",
+- :okta depends on :react
+
+open `public/index.html` and view console.
+
+(run `yarn && yarn shadow-cljs release app` to recompile)
+
+### Error:
 
 ```
 Uncaught TypeError: $jscomp.initSymbol is not a function
@@ -51,13 +61,3 @@ $APP.$shadow$js$jsRequire$$ @ react.js:2010
 Show 5 more frames
 ```
 
-Reproduction:
-
-two modules,
-- :okta requires "@okta/okta-signin-widget",
-- :react requires "react",
-- :okta depends on :react
-
-open `public/index.html` and view console.
-
-(run `yarn && yarn shadow-cljs release app` to recompile)
