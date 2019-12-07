@@ -57,3 +57,7 @@ two modules,
 - :okta requires "@okta/okta-signin-widget",
 - :react requires "react",
 - :okta depends on :react
+
+open `public/index.html` and view console.
+
+(run `yarn && yarn shadow-cljs release app` to recompile)
