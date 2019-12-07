@@ -1,0 +1,10 @@
+{:builds
+ {:app {:asset-path "/js"
+        :modules {:react {:entries [app.react]}
+                  :okta {:entries [app.okta]
+                         :depends-on #{:react}}}
+        :output-dir "public/js"
+        :target :browser}}
+ :dependencies []
+ :dev-http {3000 "public"}
+ :source-paths ["src"]}

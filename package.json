@@ -1,0 +1,8 @@
+{
+  "name": "shadow-jscomp",
+  "version": "0.1.0",
+  "dependencies": {
+    "@okta/okta-signin-widget": "^3.5.0",
+    "react": "~16.8.0"
+  }
+}
